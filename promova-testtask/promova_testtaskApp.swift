@@ -6,12 +6,24 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
-struct promova_testtaskApp: App {
+struct MyApp: App {
+    private let store = Store(
+        initialState: AppState(),
+        reducer: appReducer,
+        environment: AppEnvironment(
+            networkService: NetworkService.shared,
+            realmService: RealmService(),
+            mainQueue: DispatchQueue.main.eraseToAnyScheduler()
+        )
+    )
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AnimalCategoriesView(store: store)
         }
     }
 }
+
