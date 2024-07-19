@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import RealmSwift
+
+class FactContent: Object {
+    @Persisted var fact: String = ""
+    @Persisted var image: String = ""
+}

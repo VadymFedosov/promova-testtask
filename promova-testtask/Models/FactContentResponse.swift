@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct FactContentResponse: Codable {
+    let fact: String
+    let image: String
+}

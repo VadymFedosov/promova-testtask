@@ -11,7 +11,28 @@
 		CE55F0F12C4A8BD9008BB574 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F0F02C4A8BD9008BB574 /* ContentView.swift */; };
 		CE55F0F32C4A8BDB008BB574 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE55F0F22C4A8BDB008BB574 /* Assets.xcassets */; };
 		CE55F0F62C4A8BDB008BB574 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE55F0F52C4A8BDB008BB574 /* Preview Assets.xcassets */; };
+		CE55F0FE2C4A8C7F008BB574 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CE55F0FD2C4A8C7F008BB574 /* ComposableArchitecture */; };
+		CE55F1022C4A8CE8008BB574 /* AnimalCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F1012C4A8CE8008BB574 /* AnimalCategory.swift */; };
+		CE55F1052C4A8D05008BB574 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CE55F1042C4A8D05008BB574 /* RealmSwift */; };
+		CE55F1062C4A8D05008BB574 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = CE55F1042C4A8D05008BB574 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		CE55F1092C4A8D15008BB574 /* FactContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F1082C4A8D15008BB574 /* FactContent.swift */; };
+		CE55F10B2C4A8D33008BB574 /* AnimalCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F10A2C4A8D33008BB574 /* AnimalCategoryResponse.swift */; };
+		CE55F10D2C4A8D49008BB574 /* FactContentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F10C2C4A8D49008BB574 /* FactContentResponse.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE55F1072C4A8D05008BB574 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE55F1062C4A8D05008BB574 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CE55F0EB2C4A8BD9008BB574 /* promova-testtask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "promova-testtask.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +40,10 @@
 		CE55F0F02C4A8BD9008BB574 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE55F0F22C4A8BDB008BB574 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE55F0F52C4A8BDB008BB574 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE55F1012C4A8CE8008BB574 /* AnimalCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCategory.swift; sourceTree = "<group>"; };
+		CE55F1082C4A8D15008BB574 /* FactContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactContent.swift; sourceTree = "<group>"; };
+		CE55F10A2C4A8D33008BB574 /* AnimalCategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCategoryResponse.swift; sourceTree = "<group>"; };
+		CE55F10C2C4A8D49008BB574 /* FactContentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactContentResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE55F1052C4A8D05008BB574 /* RealmSwift in Frameworks */,
+				CE55F0FE2C4A8C7F008BB574 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +64,7 @@
 			children = (
 				CE55F0ED2C4A8BD9008BB574 /* promova-testtask */,
 				CE55F0EC2C4A8BD9008BB574 /* Products */,
+				CE55F1032C4A8D05008BB574 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +79,7 @@
 		CE55F0ED2C4A8BD9008BB574 /* promova-testtask */ = {
 			isa = PBXGroup;
 			children = (
+				CE55F1002C4A8CD1008BB574 /* Models */,
 				CE55F0EE2C4A8BD9008BB574 /* promova_testtaskApp.swift */,
 				CE55F0F02C4A8BD9008BB574 /* ContentView.swift */,
 				CE55F0F22C4A8BDB008BB574 /* Assets.xcassets */,
@@ -67,6 +96,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CE55F1002C4A8CD1008BB574 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE55F1012C4A8CE8008BB574 /* AnimalCategory.swift */,
+				CE55F1082C4A8D15008BB574 /* FactContent.swift */,
+				CE55F10A2C4A8D33008BB574 /* AnimalCategoryResponse.swift */,
+				CE55F10C2C4A8D49008BB574 /* FactContentResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE55F1032C4A8D05008BB574 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,12 +124,17 @@
 				CE55F0E72C4A8BD9008BB574 /* Sources */,
 				CE55F0E82C4A8BD9008BB574 /* Frameworks */,
 				CE55F0E92C4A8BD9008BB574 /* Resources */,
+				CE55F1072C4A8D05008BB574 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "promova-testtask";
+			packageProductDependencies = (
+				CE55F0FD2C4A8C7F008BB574 /* ComposableArchitecture */,
+				CE55F1042C4A8D05008BB574 /* RealmSwift */,
+			);
 			productName = "promova-testtask";
 			productReference = CE55F0EB2C4A8BD9008BB574 /* promova-testtask.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +163,10 @@
 				Base,
 			);
 			mainGroup = CE55F0E22C4A8BD9008BB574;
+			packageReferences = (
+				CE55F0FC2C4A8C7F008BB574 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				CE55F0FF2C4A8C8D008BB574 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = CE55F0EC2C4A8BD9008BB574 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE55F1022C4A8CE8008BB574 /* AnimalCategory.swift in Sources */,
+				CE55F1092C4A8D15008BB574 /* FactContent.swift in Sources */,
+				CE55F10D2C4A8D49008BB574 /* FactContentResponse.swift in Sources */,
 				CE55F0F12C4A8BD9008BB574 /* ContentView.swift in Sources */,
 				CE55F0EF2C4A8BD9008BB574 /* promova_testtaskApp.swift in Sources */,
+				CE55F10B2C4A8D33008BB574 /* AnimalCategoryResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +404,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE55F0FC2C4A8C7F008BB574 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.11.2;
+			};
+		};
+		CE55F0FF2C4A8C8D008BB574 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE55F0FD2C4A8C7F008BB574 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE55F0FC2C4A8C7F008BB574 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		CE55F1042C4A8D05008BB574 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE55F0FF2C4A8C8D008BB574 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE55F0E32C4A8BD9008BB574 /* Project object */;
 }

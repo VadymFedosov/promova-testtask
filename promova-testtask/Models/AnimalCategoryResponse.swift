@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+struct AnimalCategoryResponse: Codable, Identifiable {
+    var id = UUID()
+    let title: String
+    let description: String
+    let image: String
+    let order: Int
+    let status: String
+    let content: [FactContentResponse]
+}
