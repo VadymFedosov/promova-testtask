@@ -21,6 +21,8 @@
 		CE55F1102C4A8DC8008BB574 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F10F2C4A8DC8008BB574 /* NetworkService.swift */; };
 		CE55F1142C4A8DF9008BB574 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F1132C4A8DF9008BB574 /* RealmService.swift */; };
 		CE55F1172C4A8EA1008BB574 /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F1162C4A8EA1008BB574 /* Reducer.swift */; };
+		CE55F11A2C4A8EF4008BB574 /* AnimalCategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F1192C4A8EF4008BB574 /* AnimalCategoriesView.swift */; };
+		CE55F11C2C4A8FCC008BB574 /* FactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F11B2C4A8FCC008BB574 /* FactsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +52,8 @@
 		CE55F10F2C4A8DC8008BB574 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		CE55F1132C4A8DF9008BB574 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		CE55F1162C4A8EA1008BB574 /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
+		CE55F1192C4A8EF4008BB574 /* AnimalCategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCategoriesView.swift; sourceTree = "<group>"; };
+		CE55F11B2C4A8FCC008BB574 /* FactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		CE55F0ED2C4A8BD9008BB574 /* promova-testtask */ = {
 			isa = PBXGroup;
 			children = (
+				CE55F1182C4A8EE7008BB574 /* View */,
 				CE55F1152C4A8E8F008BB574 /* Reducer */,
 				CE55F1112C4A8DE3008BB574 /* Services */,
 				CE55F1002C4A8CD1008BB574 /* Models */,
@@ -153,6 +158,15 @@
 				CE55F1162C4A8EA1008BB574 /* Reducer.swift */,
 			);
 			path = Reducer;
+			sourceTree = "<group>";
+		};
+		CE55F1182C4A8EE7008BB574 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE55F1192C4A8EF4008BB574 /* AnimalCategoriesView.swift */,
+				CE55F11B2C4A8FCC008BB574 /* FactsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,10 +252,12 @@
 				CE55F1092C4A8D15008BB574 /* FactContent.swift in Sources */,
 				CE55F10D2C4A8D49008BB574 /* FactContentResponse.swift in Sources */,
 				CE55F0F12C4A8BD9008BB574 /* ContentView.swift in Sources */,
+				CE55F11A2C4A8EF4008BB574 /* AnimalCategoriesView.swift in Sources */,
 				CE55F0EF2C4A8BD9008BB574 /* promova_testtaskApp.swift in Sources */,
 				CE55F1172C4A8EA1008BB574 /* Reducer.swift in Sources */,
 				CE55F10B2C4A8D33008BB574 /* AnimalCategoryResponse.swift in Sources */,
 				CE55F1102C4A8DC8008BB574 /* NetworkService.swift in Sources */,
+				CE55F11C2C4A8FCC008BB574 /* FactsView.swift in Sources */,
 				CE55F1142C4A8DF9008BB574 /* RealmService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
