@@ -18,6 +18,8 @@
 		CE55F1092C4A8D15008BB574 /* FactContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F1082C4A8D15008BB574 /* FactContent.swift */; };
 		CE55F10B2C4A8D33008BB574 /* AnimalCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F10A2C4A8D33008BB574 /* AnimalCategoryResponse.swift */; };
 		CE55F10D2C4A8D49008BB574 /* FactContentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F10C2C4A8D49008BB574 /* FactContentResponse.swift */; };
+		CE55F1102C4A8DC8008BB574 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F10F2C4A8DC8008BB574 /* NetworkService.swift */; };
+		CE55F1142C4A8DF9008BB574 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE55F1132C4A8DF9008BB574 /* RealmService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +46,8 @@
 		CE55F1082C4A8D15008BB574 /* FactContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactContent.swift; sourceTree = "<group>"; };
 		CE55F10A2C4A8D33008BB574 /* AnimalCategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCategoryResponse.swift; sourceTree = "<group>"; };
 		CE55F10C2C4A8D49008BB574 /* FactContentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactContentResponse.swift; sourceTree = "<group>"; };
+		CE55F10F2C4A8DC8008BB574 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CE55F1132C4A8DF9008BB574 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		CE55F0ED2C4A8BD9008BB574 /* promova-testtask */ = {
 			isa = PBXGroup;
 			children = (
+				CE55F1112C4A8DE3008BB574 /* Services */,
 				CE55F1002C4A8CD1008BB574 /* Models */,
 				CE55F0EE2C4A8BD9008BB574 /* promova_testtaskApp.swift */,
 				CE55F0F02C4A8BD9008BB574 /* ContentView.swift */,
@@ -112,6 +117,31 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE55F10E2C4A8DB9008BB574 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CE55F10F2C4A8DC8008BB574 /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CE55F1112C4A8DE3008BB574 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE55F1122C4A8DED008BB574 /* Realm */,
+				CE55F10E2C4A8DB9008BB574 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE55F1122C4A8DED008BB574 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				CE55F1132C4A8DF9008BB574 /* RealmService.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +229,8 @@
 				CE55F0F12C4A8BD9008BB574 /* ContentView.swift in Sources */,
 				CE55F0EF2C4A8BD9008BB574 /* promova_testtaskApp.swift in Sources */,
 				CE55F10B2C4A8D33008BB574 /* AnimalCategoryResponse.swift in Sources */,
+				CE55F1102C4A8DC8008BB574 /* NetworkService.swift in Sources */,
+				CE55F1142C4A8DF9008BB574 /* RealmService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
